@@ -1,0 +1,29 @@
+% greedy
+
+% 3 Blöcke
+depth
+% 7,104 inferences, 0.004 CPU in 0.004 seconds (92% CPU, 1922078 Lips)
+breadth
+% 3,831 inferences, 0.001 CPU in 0.001 seconds (96% CPU, 2758099 Lips)
+informed
+% 1,660 inferences, 0.001 CPU in 0.001 seconds (96% CPU, 2434018 Lips)
+climb
+% 235,375 inferences, 0.112 CPU in 0.121 seconds (93% CPU, 2098359 Lips)
+climbBack
+% 1,664 inferences, 0.001 CPU in 0.001 seconds (84% CPU, 2117048 Lips)
+true .
+
+% 4 Blöcke
+depth
+% 64,999 inferences, 0.030 CPU in 0.031 seconds (98% CPU, 2163748 Lips)
+breadth
+% 61,043 inferences, 0.022 CPU in 0.022 seconds (98% CPU, 2782777 Lips)
+informed
+% 7,343 inferences, 0.003 CPU in 0.003 seconds (97% CPU, 2777231 Lips)
+climb
+% 19,152,888 inferences, 6.859 CPU in 7.263 seconds (94% CPU, 2792404 Lips)
+climbBack
+% 7,334 inferences, 0.003 CPU in 0.003 seconds (96% CPU, 2325301 Lips)
+true .
+
+

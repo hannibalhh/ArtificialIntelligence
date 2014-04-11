@@ -1,0 +1,24 @@
+
+s(Z) :- append(X,Y,Z),np(X),vp(Y).
+
+np(NO) :- pn(NO).
+np(NP) :- append(X,Y,NP),det(X),n(Y).
+vp(X) :- v(X).
+vp(Z) :- append(X,Y,Z),v(X), np(Y). 
+
+pn([john]).
+pn([mary]).
+
+n([man]).
+n([woman]).
+n([dog]).
+n([bird]).
+n([apple]).
+v([sings]).
+v([eats]).
+v([bites]).
+v([loves]).
+det([the]).
+
+
+

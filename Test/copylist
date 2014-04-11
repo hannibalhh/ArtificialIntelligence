@@ -1,0 +1,5 @@
+copy([H],[H]). 
+copy([H1|T1],[H1|T2]) :- copy(T1,T2).
+
+copy2([H],[H]). 
+copy2([H1|T1],T2) :- copy2(T1,[H1|T2]).

@@ -1,0 +1,36 @@
+
+
+
+assign --> var(Typ),assignSymbol,expression(Typ),end.
+expression(Typ) --> operand(Typ). 
+expression(Typ) --> operand(Typ1),operator(Typ2),operand(Typ3),
+						{bestimmeTyp([Typ1,Typ2,Typ3],Typ)}. 
+
+operand(integer) --> intconst.
+operand(Typ) --> var(Typ).
+operand(Typ) --> bracketOn,var(Typ),bracketOff.
+
+operator(integer) --> [+].
+operator(integer) --> [-].
+operator(real) --> [*].
+operator(real) --> [/].
+
+var(integer) --> [i].
+var(integer) --> [j].
+var(integer) --> [k].
+var(integer) --> intconst.
+var(real) --> [x].
+var(real) --> [y].
+var(real) --> [z].
+intconst --> [1].
+intconst --> [2].
+intconst --> [3].
+
+bracketOff --> [')'].
+bracketOn --> ['('].
+assignSymbol --> [':='].
+end --> [;].
+
+bestimmeTyp(List,real):- member(real,List),!.
+           bestimmeTyp(List,integer):- \+member(real,List),!.
+
